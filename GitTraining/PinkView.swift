@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  PinkView.swift
 //  GitTraining
 //
 //  Created by Apprenant 125 on 08/06/2024.
@@ -7,22 +7,21 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PinkView: View {
     var body: some View {
         ZStack {
-            Color.yellow
-                .edgesIgnoringSafeArea(.all)
+            Color.pink
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack {
-                Image(systemName: "house")
+                Text("Welcome!")
+                Image(systemName: "car")
                     .imageScale(.large)
                     .foregroundStyle(.tint)
-                Text("Bienvenue!")
             }
-            .padding()
         }
     }
 }
 
 #Preview {
-    ContentView()
+    PinkView()
 }
